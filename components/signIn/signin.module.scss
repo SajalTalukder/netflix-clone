@@ -1,0 +1,30 @@
+.signin {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__button {
+    margin-top: 3rem;
+    button {
+      padding: 1.3rem 4rem;
+      background: red;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 0.4s;
+      &:hover {
+        background-color: rgb(158, 5, 5);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}

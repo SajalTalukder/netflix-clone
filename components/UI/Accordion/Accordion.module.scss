@@ -1,0 +1,38 @@
+.accordion {
+  width: 60%;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 3.2rem;
+}
+.accordion h1 {
+  text-align: center;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  font-size: 3rem;
+}
+.accordionEmails {
+  text-align: center;
+  margin-top: 6.4rem;
+}
+.accordionEmails h2 {
+  font-size: 1.7rem;
+  color: #eee;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+@media screen and (max-width: 900px) {
+  .accordion {
+    width: 80%;
+  }
+  .accordion h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .accordion {
+    width: 95%;
+  }
+  .accordion h1 {
+    font-size: 2rem;
+  }
+}

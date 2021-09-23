@@ -1,0 +1,55 @@
+.input-box {
+  width: 100%;
+  p {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+  }
+  input {
+    display: inline-block;
+    padding: 2rem 4rem;
+    width: 50%;
+    border: none;
+    outline: none;
+    margin: auto;
+    font-size: 1.6rem;
+  }
+  button {
+    display: inline-block;
+    padding: 2rem 5rem;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    margin: auto;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 1000px) {
+    p {
+      font-size: 1.6rem;
+    }
+    button {
+      padding: 2rem 3rem;
+    }
+    input {
+      width: 60%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    button {
+      width: 100%;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}

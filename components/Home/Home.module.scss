@@ -1,0 +1,185 @@
+.header {
+  height: 100vh;
+  border-bottom: 5px solid rgb(75, 74, 74);
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.733),
+      rgba(12, 12, 12, 0.678)
+    ),
+    url(/images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: white;
+    width: 65%;
+    margin: auto;
+
+    text-align: center;
+    h1 {
+      font-size: 4.5rem;
+    }
+    h2 {
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+      h1 {
+        font-size: 3.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      width: 90%;
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: red;
+  height: 10vh;
+  transition: all 0.3s;
+  &__wrapper {
+    height: 10vh;
+  }
+  &__fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: rgb(49, 49, 49);
+  }
+  &__logo {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-left: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  &__button {
+    margin-right: 4rem;
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+      background-color: red;
+      border-radius: 8px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+      transition: all 0.3s;
+      &:hover {
+        background-color: rgb(173, 7, 7);
+      }
+      &:active {
+        transform: scale(0.94);
+      }
+    }
+  }
+}
+
+.main {
+  margin-top: 3rem;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  &__image {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 800px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 1.7rem;
+      }
+    }
+    p {
+      font-size: 2rem;
+      @media screen and (max-width: 800px) {
+        font-size: 1.8rem;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 1.7rem;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 1.5rem;
+      }
+    }
+    &-1 {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      justify-content: center;
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 800px) {
+          font-size: 3rem;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 2rem;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 1.7rem;
+        }
+      }
+      p {
+        font-size: 2rem;
+        @media screen and (max-width: 800px) {
+          font-size: 1.8rem;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 1.7rem;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 80%;
+  margin: auto;
+  @media screen and (max-width: 550px) {
+    grid-template-columns: 1fr;
+  }
+}
