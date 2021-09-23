@@ -9,7 +9,7 @@ const Nav = () => {
   const path = session ? "/movies" : "/";
   const router = useRouter();
   const signOutHandler = () => {
-    signOut({ callbackUrl: "http://localhost:3000/" });
+    signOut({ callbackUrl: "netflix-clone-psi-blue.vercel.app" });
   };
 
   useEffect(() => {
