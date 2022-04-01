@@ -41,23 +41,21 @@ const MovieDetails = ({ movie, actionMovie, topMovie }) => {
     setTrailerUrl("");
   };
 
-  const showTrailer = (movie) => {
+  const showTrailer = async (movie) => {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
-      movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
-        .then((url) => {
-          const urlParams = new URL(url).search;
-          const params = new URLSearchParams(urlParams).get("v");
-          if (params) {
-            setTrailerUrl(params);
-          } else {
-            setTrailerUrl("Ob4NC4D6zTU");
-          }
-        })
-        .catch((err) => {
-          setTrailerUrl("Ob4NC4D6zTU");
-        });
+      const mt = await movieTrailer(
+        movie?.name || movie?.title || movie?.original_name || ""
+      );
+      const url = await mt.json();
+      const urlParams = new URL(url).search;
+      const params = new URLSearchParams(urlParams).get("v");
+      if (params) {
+        setTrailerUrl(params);
+      } else {
+        setTrailerUrl("Ob4NC4D6zTU");
+      }
     }
   };
 

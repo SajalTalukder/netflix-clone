@@ -5,7 +5,7 @@ import { signIn } from "next-auth/client";
 
 function SignIn() {
   const signInHandler = () => {
-    signIn(null, { callbackUrl: "https://netflix-clone-rho-ten.vercel.app/movies" });
+    signIn(null, { callbackUrl: "http://localhost:3000/movies" });
   };
   return (
     <div className={cls["signin"]}>

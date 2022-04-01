@@ -54,7 +54,6 @@ export async function getServerSideProps(context) {
       romanticMovie,
       actionMovie,
       horrorMovie,
-
       topRatedMovie,
       documentMovie,
       comedyMovie,
